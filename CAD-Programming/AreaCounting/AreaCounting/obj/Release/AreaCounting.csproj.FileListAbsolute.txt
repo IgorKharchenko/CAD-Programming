@@ -1,0 +1,4 @@
+C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCounting\AreaCounting\bin\Release\AreaCounting.dll
+C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCounting\AreaCounting\bin\Release\AreaCounting.pdb
+C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCounting\AreaCounting\obj\Release\AreaCounting.dll
+C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCounting\AreaCounting\obj\Release\AreaCounting.pdb
