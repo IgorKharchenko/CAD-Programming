@@ -113,9 +113,9 @@ namespace AreaCounting
 				case "Sides + Inner circle":
 					return radius * ((a + b + c) / 2.0);
 				case "Sides + Outer circle":
-					return (a + b + c) / (4 * radius);
+					return (a + b + c) / (4.0 * radius);
 				case "Three sides":
-					double p = (a + b + c) / 2;
+					double p = (a + b + c) / 2.0;
 					return (p - a) * (p - b);
 			}
 
@@ -144,14 +144,14 @@ namespace AreaCounting
 
 	public interface IValidator
 	{
-		bool validate(string[] input);
+		bool Validate(string[] input);
 	}
 
 	public class NumberValidator : IValidator
 	{
 		public NumberValidator() { }
 
-		public bool validate(string[] input)
+		public bool Validate(string[] input)
 		{
 			/* Поддерживаются числа: 12,34; 0,12; ,12 */
 			string pattern = @"^(\d+|\d*\,\d+)$";
@@ -173,9 +173,9 @@ namespace AreaCounting
 	{
 		public AngleValidator() { }
 		
-		public bool validate(string[] input)
+		public bool Validate(string[] input)
 		{
-			base.validate(input);
+			base.Validate(input);
 
 			foreach (string element in input)
 			{

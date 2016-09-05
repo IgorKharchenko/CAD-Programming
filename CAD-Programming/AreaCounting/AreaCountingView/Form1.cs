@@ -17,10 +17,10 @@ namespace AreaCountingView
 			string[] arguments = Tools.replaceDotsByCommas(new string[] { circleRadius.Text });
 
 			NumberValidator validator = new NumberValidator();
-			if (validator.validate(arguments))
+			if (validator.Validate(arguments))
 			{
 				Circle circle = new Circle(arguments);
-				showAnswer(circle.countArea());
+				ShowAnswer(circle.countArea());
 			}
 		}
 
@@ -29,10 +29,10 @@ namespace AreaCountingView
 			string[] arguments = Tools.replaceDotsByCommas(new string[] { rectangleWidth.Text, rectangleHeight.Text });
 
 			NumberValidator validator = new NumberValidator();
-			if (validator.validate(arguments))
+			if (validator.Validate(arguments))
 			{
 				Rectangle rect = new Rectangle(arguments);
-				showAnswer(rect.countArea());
+				ShowAnswer(rect.countArea());
 			}
 		}
 
@@ -60,7 +60,7 @@ namespace AreaCountingView
 				});
 
 				AngleValidator angleValidator = new AngleValidator();
-				angleValidator.validate(new string[] { SATriangleAngle.Text });
+				angleValidator.Validate(new string[] { SATriangleAngle.Text });
 
 				mode = "Side + Angle";
 			}
@@ -98,90 +98,72 @@ namespace AreaCountingView
 			}
 
 			NumberValidator validator = new NumberValidator();
-			if (validator.validate(arguments))
+			if (validator.Validate(arguments))
 			{
 				Triangle triangle = new Triangle(arguments, mode);
-				showAnswer(triangle.countArea());
+				ShowAnswer(triangle.countArea());
 			}
 		}
 
-		private void showAnswer(double answer)
+		private void ShowAnswer(double answer)
 		{
 			MessageBox.Show("Площадь равна " + answer, "Ответ", MessageBoxButtons.OK);
 		}
 
-		/* Unneccessary methods */
+		/* Unneccessary and undeletable methods */
 
 		private void regExprCheckButotn_Click(object sender, EventArgs e)
 		{
-			string pattern = @"^(\d+|(?<exponent>\d*)(\.|\,)(?<mantissa>\d+))$";
-			string replacePattern = @"${exponent},${mantissa}";
-			Regex regex = new Regex(pattern);
 
-			string result = Regex.Replace(circleRadius.Text, pattern, replacePattern);
-			Console.WriteLine("Результат: {0}", result);
 		}
-
 		private void Form1_Load(object sender, EventArgs e)
 		{
 
 		}
-
 		private void SATriangleSideA_Click(object sender, EventArgs e)
 		{
 
 		}
-
 		private void textBox3_TextChanged(object sender, EventArgs e)
 		{
 
 		}
-
 		private void SATriangleSideB_Click(object sender, EventArgs e)
 		{
 
 		}
-
 		private void SATriangleAngle_Click(object sender, EventArgs e)
 		{
 
 		}
-
 		private void textBox4_TextChanged(object sender, EventArgs e)
 		{
 
 		}
-
 		private void textBox5_TextChanged(object sender, EventArgs e)
 		{
 
 		}
-
 		private void textBox2_TextChanged(object sender, EventArgs e)
 		{
 
 		}
-
 		private void SATrianglePage_Click(object sender, EventArgs e)
 		{
 
 		}
-
 		private void SSSTrianglePage_Click(object sender, EventArgs e)
 		{
 
 		}
-
 		private void OuterCircleTrianglePage_Click(object sender, EventArgs e)
 		{
 
 		}
-
 		private void label1_Click(object sender, EventArgs e)
 		{
 
 		}
-
 		private void SidesTriangleSideB_TextChanged(object sender, EventArgs e)
 		{
 

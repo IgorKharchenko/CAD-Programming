@@ -54,14 +54,6 @@
 			this.InnerTriangleSideC = new System.Windows.Forms.TextBox();
 			this.InnerTriangleSideA = new System.Windows.Forms.TextBox();
 			this.SidesOnTriangleLabel = new System.Windows.Forms.Label();
-			this.mainTabControl = new System.Windows.Forms.TabControl();
-			this.circleTabPage = new System.Windows.Forms.TabPage();
-			this.regExprCheckButotn = new System.Windows.Forms.Button();
-			this.circleAreaButton = new System.Windows.Forms.Button();
-			this.rectangleTabPage = new System.Windows.Forms.TabPage();
-			this.rectangleAreaButton = new System.Windows.Forms.Button();
-			this.tirangleTabPage = new System.Windows.Forms.TabPage();
-			this.triangleAreaButton = new System.Windows.Forms.Button();
 			this.OuterCircleTrianglePage = new System.Windows.Forms.TabPage();
 			this.RadiusOutTriangleLabel = new System.Windows.Forms.Label();
 			this.OuterTriangleRadius = new System.Windows.Forms.TextBox();
@@ -74,16 +66,23 @@
 			this.SidesTriangleSideC = new System.Windows.Forms.TextBox();
 			this.SidesTriangleSideA = new System.Windows.Forms.TextBox();
 			this.SidesOnTriangleLabel3 = new System.Windows.Forms.Label();
+			this.mainTabControl = new System.Windows.Forms.TabControl();
+			this.circleTabPage = new System.Windows.Forms.TabPage();
+			this.circleAreaButton = new System.Windows.Forms.Button();
+			this.rectangleTabPage = new System.Windows.Forms.TabPage();
+			this.rectangleAreaButton = new System.Windows.Forms.Button();
+			this.tirangleTabPage = new System.Windows.Forms.TabPage();
+			this.triangleAreaButton = new System.Windows.Forms.Button();
 			this.triangleTabControl.SuspendLayout();
 			this.BHTrianglePage.SuspendLayout();
 			this.SATrianglePage.SuspendLayout();
 			this.InnerCircleTrianglePage.SuspendLayout();
+			this.OuterCircleTrianglePage.SuspendLayout();
+			this.SidesTrianglePage.SuspendLayout();
 			this.mainTabControl.SuspendLayout();
 			this.circleTabPage.SuspendLayout();
 			this.rectangleTabPage.SuspendLayout();
 			this.tirangleTabPage.SuspendLayout();
-			this.OuterCircleTrianglePage.SuspendLayout();
-			this.SidesTrianglePage.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// circleRadius
@@ -339,97 +338,6 @@
 			this.SidesOnTriangleLabel.TabIndex = 0;
 			this.SidesOnTriangleLabel.Text = "Стороны А, B и С:";
 			// 
-			// mainTabControl
-			// 
-			this.mainTabControl.Controls.Add(this.circleTabPage);
-			this.mainTabControl.Controls.Add(this.rectangleTabPage);
-			this.mainTabControl.Controls.Add(this.tirangleTabPage);
-			this.mainTabControl.Location = new System.Drawing.Point(2, 1);
-			this.mainTabControl.Name = "mainTabControl";
-			this.mainTabControl.SelectedIndex = 0;
-			this.mainTabControl.Size = new System.Drawing.Size(364, 217);
-			this.mainTabControl.TabIndex = 21;
-			// 
-			// circleTabPage
-			// 
-			this.circleTabPage.Controls.Add(this.regExprCheckButotn);
-			this.circleTabPage.Controls.Add(this.radiusLabel);
-			this.circleTabPage.Controls.Add(this.circleRadius);
-			this.circleTabPage.Controls.Add(this.circleAreaButton);
-			this.circleTabPage.Location = new System.Drawing.Point(4, 22);
-			this.circleTabPage.Name = "circleTabPage";
-			this.circleTabPage.Padding = new System.Windows.Forms.Padding(3);
-			this.circleTabPage.Size = new System.Drawing.Size(356, 191);
-			this.circleTabPage.TabIndex = 0;
-			this.circleTabPage.Text = "Круг";
-			this.circleTabPage.UseVisualStyleBackColor = true;
-			// 
-			// regExprCheckButotn
-			// 
-			this.regExprCheckButotn.Location = new System.Drawing.Point(99, 132);
-			this.regExprCheckButotn.Name = "regExprCheckButotn";
-			this.regExprCheckButotn.Size = new System.Drawing.Size(156, 30);
-			this.regExprCheckButotn.TabIndex = 23;
-			this.regExprCheckButotn.Text = "Проверить регулярку";
-			this.regExprCheckButotn.UseVisualStyleBackColor = true;
-			this.regExprCheckButotn.Click += new System.EventHandler(this.regExprCheckButotn_Click);
-			// 
-			// circleAreaButton
-			// 
-			this.circleAreaButton.Location = new System.Drawing.Point(99, 102);
-			this.circleAreaButton.Name = "circleAreaButton";
-			this.circleAreaButton.Size = new System.Drawing.Size(156, 24);
-			this.circleAreaButton.TabIndex = 22;
-			this.circleAreaButton.Text = "Рассчитать (круг)";
-			this.circleAreaButton.UseVisualStyleBackColor = true;
-			this.circleAreaButton.Click += new System.EventHandler(this.circleAreaButton_Click);
-			// 
-			// rectangleTabPage
-			// 
-			this.rectangleTabPage.Controls.Add(this.heightLabel);
-			this.rectangleTabPage.Controls.Add(this.rectangleAreaButton);
-			this.rectangleTabPage.Controls.Add(this.widthLabel);
-			this.rectangleTabPage.Controls.Add(this.rectangleHeight);
-			this.rectangleTabPage.Controls.Add(this.rectangleWidth);
-			this.rectangleTabPage.Location = new System.Drawing.Point(4, 22);
-			this.rectangleTabPage.Name = "rectangleTabPage";
-			this.rectangleTabPage.Padding = new System.Windows.Forms.Padding(3);
-			this.rectangleTabPage.Size = new System.Drawing.Size(356, 191);
-			this.rectangleTabPage.TabIndex = 1;
-			this.rectangleTabPage.Text = "Прямоугольник";
-			this.rectangleTabPage.UseVisualStyleBackColor = true;
-			// 
-			// rectangleAreaButton
-			// 
-			this.rectangleAreaButton.Location = new System.Drawing.Point(102, 112);
-			this.rectangleAreaButton.Name = "rectangleAreaButton";
-			this.rectangleAreaButton.Size = new System.Drawing.Size(128, 32);
-			this.rectangleAreaButton.TabIndex = 23;
-			this.rectangleAreaButton.Text = "Рассчитать прям.";
-			this.rectangleAreaButton.UseVisualStyleBackColor = true;
-			this.rectangleAreaButton.Click += new System.EventHandler(this.rectangleAreaButton_Click);
-			// 
-			// tirangleTabPage
-			// 
-			this.tirangleTabPage.Controls.Add(this.triangleAreaButton);
-			this.tirangleTabPage.Controls.Add(this.triangleTabControl);
-			this.tirangleTabPage.Location = new System.Drawing.Point(4, 22);
-			this.tirangleTabPage.Name = "tirangleTabPage";
-			this.tirangleTabPage.Size = new System.Drawing.Size(356, 191);
-			this.tirangleTabPage.TabIndex = 2;
-			this.tirangleTabPage.Text = "Треугольник";
-			this.tirangleTabPage.UseVisualStyleBackColor = true;
-			// 
-			// triangleAreaButton
-			// 
-			this.triangleAreaButton.Location = new System.Drawing.Point(113, 154);
-			this.triangleAreaButton.Name = "triangleAreaButton";
-			this.triangleAreaButton.Size = new System.Drawing.Size(130, 32);
-			this.triangleAreaButton.TabIndex = 24;
-			this.triangleAreaButton.Text = "Рассчитать треуг.";
-			this.triangleAreaButton.UseVisualStyleBackColor = true;
-			this.triangleAreaButton.Click += new System.EventHandler(this.triangleAreaButton_Click);
-			// 
 			// OuterCircleTrianglePage
 			// 
 			this.OuterCircleTrianglePage.Controls.Add(this.RadiusOutTriangleLabel);
@@ -541,6 +449,86 @@
 			this.SidesOnTriangleLabel3.Text = "Стороны А, B и С:";
 			this.SidesOnTriangleLabel3.Click += new System.EventHandler(this.label1_Click);
 			// 
+			// mainTabControl
+			// 
+			this.mainTabControl.Controls.Add(this.circleTabPage);
+			this.mainTabControl.Controls.Add(this.rectangleTabPage);
+			this.mainTabControl.Controls.Add(this.tirangleTabPage);
+			this.mainTabControl.Location = new System.Drawing.Point(2, 1);
+			this.mainTabControl.Name = "mainTabControl";
+			this.mainTabControl.SelectedIndex = 0;
+			this.mainTabControl.Size = new System.Drawing.Size(364, 217);
+			this.mainTabControl.TabIndex = 21;
+			// 
+			// circleTabPage
+			// 
+			this.circleTabPage.Controls.Add(this.radiusLabel);
+			this.circleTabPage.Controls.Add(this.circleRadius);
+			this.circleTabPage.Controls.Add(this.circleAreaButton);
+			this.circleTabPage.Location = new System.Drawing.Point(4, 22);
+			this.circleTabPage.Name = "circleTabPage";
+			this.circleTabPage.Padding = new System.Windows.Forms.Padding(3);
+			this.circleTabPage.Size = new System.Drawing.Size(356, 191);
+			this.circleTabPage.TabIndex = 0;
+			this.circleTabPage.Text = "Круг";
+			this.circleTabPage.UseVisualStyleBackColor = true;
+			// 
+			// circleAreaButton
+			// 
+			this.circleAreaButton.Location = new System.Drawing.Point(99, 102);
+			this.circleAreaButton.Name = "circleAreaButton";
+			this.circleAreaButton.Size = new System.Drawing.Size(156, 24);
+			this.circleAreaButton.TabIndex = 22;
+			this.circleAreaButton.Text = "Рассчитать (круг)";
+			this.circleAreaButton.UseVisualStyleBackColor = true;
+			this.circleAreaButton.Click += new System.EventHandler(this.circleAreaButton_Click);
+			// 
+			// rectangleTabPage
+			// 
+			this.rectangleTabPage.Controls.Add(this.heightLabel);
+			this.rectangleTabPage.Controls.Add(this.rectangleAreaButton);
+			this.rectangleTabPage.Controls.Add(this.widthLabel);
+			this.rectangleTabPage.Controls.Add(this.rectangleHeight);
+			this.rectangleTabPage.Controls.Add(this.rectangleWidth);
+			this.rectangleTabPage.Location = new System.Drawing.Point(4, 22);
+			this.rectangleTabPage.Name = "rectangleTabPage";
+			this.rectangleTabPage.Padding = new System.Windows.Forms.Padding(3);
+			this.rectangleTabPage.Size = new System.Drawing.Size(356, 191);
+			this.rectangleTabPage.TabIndex = 1;
+			this.rectangleTabPage.Text = "Прямоугольник";
+			this.rectangleTabPage.UseVisualStyleBackColor = true;
+			// 
+			// rectangleAreaButton
+			// 
+			this.rectangleAreaButton.Location = new System.Drawing.Point(102, 112);
+			this.rectangleAreaButton.Name = "rectangleAreaButton";
+			this.rectangleAreaButton.Size = new System.Drawing.Size(128, 32);
+			this.rectangleAreaButton.TabIndex = 23;
+			this.rectangleAreaButton.Text = "Рассчитать прям.";
+			this.rectangleAreaButton.UseVisualStyleBackColor = true;
+			this.rectangleAreaButton.Click += new System.EventHandler(this.rectangleAreaButton_Click);
+			// 
+			// tirangleTabPage
+			// 
+			this.tirangleTabPage.Controls.Add(this.triangleAreaButton);
+			this.tirangleTabPage.Controls.Add(this.triangleTabControl);
+			this.tirangleTabPage.Location = new System.Drawing.Point(4, 22);
+			this.tirangleTabPage.Name = "tirangleTabPage";
+			this.tirangleTabPage.Size = new System.Drawing.Size(356, 191);
+			this.tirangleTabPage.TabIndex = 2;
+			this.tirangleTabPage.Text = "Треугольник";
+			this.tirangleTabPage.UseVisualStyleBackColor = true;
+			// 
+			// triangleAreaButton
+			// 
+			this.triangleAreaButton.Location = new System.Drawing.Point(113, 154);
+			this.triangleAreaButton.Name = "triangleAreaButton";
+			this.triangleAreaButton.Size = new System.Drawing.Size(130, 32);
+			this.triangleAreaButton.TabIndex = 24;
+			this.triangleAreaButton.Text = "Рассчитать треуг.";
+			this.triangleAreaButton.UseVisualStyleBackColor = true;
+			this.triangleAreaButton.Click += new System.EventHandler(this.triangleAreaButton_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -558,16 +546,16 @@
 			this.SATrianglePage.PerformLayout();
 			this.InnerCircleTrianglePage.ResumeLayout(false);
 			this.InnerCircleTrianglePage.PerformLayout();
+			this.OuterCircleTrianglePage.ResumeLayout(false);
+			this.OuterCircleTrianglePage.PerformLayout();
+			this.SidesTrianglePage.ResumeLayout(false);
+			this.SidesTrianglePage.PerformLayout();
 			this.mainTabControl.ResumeLayout(false);
 			this.circleTabPage.ResumeLayout(false);
 			this.circleTabPage.PerformLayout();
 			this.rectangleTabPage.ResumeLayout(false);
 			this.rectangleTabPage.PerformLayout();
 			this.tirangleTabPage.ResumeLayout(false);
-			this.OuterCircleTrianglePage.ResumeLayout(false);
-			this.OuterCircleTrianglePage.PerformLayout();
-			this.SidesTrianglePage.ResumeLayout(false);
-			this.SidesTrianglePage.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -606,7 +594,6 @@
 		private System.Windows.Forms.Button triangleAreaButton;
 		private System.Windows.Forms.Label RadiusOnTriangleLabel;
 		private System.Windows.Forms.TextBox InnerTriangleRadius;
-		private System.Windows.Forms.Button regExprCheckButotn;
 		private System.Windows.Forms.TabPage OuterCircleTrianglePage;
 		private System.Windows.Forms.Label RadiusOutTriangleLabel;
 		private System.Windows.Forms.TextBox OuterTriangleRadius;
