@@ -9,3 +9,13 @@ C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCounting\AreaCountingV
 C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCounting\AreaCountingView\obj\Release\AreaCountingView.exe
 C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCounting\AreaCountingView\obj\Release\AreaCountingView.pdb
 C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCounting\AreaCountingView\obj\Release\AreaCountingView.csprojResolveAssemblyReference.cache
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\AreaCounting\AreaCountingView\bin\Release\AreaCountingView.exe.config
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\AreaCounting\AreaCountingView\obj\Release\AreaCountingView.exe
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\AreaCounting\AreaCountingView\obj\Release\AreaCountingView.pdb
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\AreaCounting\AreaCountingView\bin\Release\AreaCountingView.exe
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\AreaCounting\AreaCountingView\bin\Release\AreaCountingView.pdb
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\AreaCounting\AreaCountingView\bin\Release\AreaCounting.dll
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\AreaCounting\AreaCountingView\bin\Release\AreaCounting.pdb
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\AreaCounting\AreaCountingView\obj\Release\AreaCountingView.Form1.resources
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\AreaCounting\AreaCountingView\obj\Release\AreaCountingView.Properties.Resources.resources
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\AreaCounting\AreaCountingView\obj\Release\AreaCountingView.csproj.GenerateResource.Cache

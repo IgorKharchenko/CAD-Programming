@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using AreaCounting;
+using System.Text.RegularExpressions;
 
 namespace AreaCountingView
 {
@@ -13,32 +14,72 @@ namespace AreaCountingView
 
 		private void circleAreaButton_Click(object sender, EventArgs e)
 		{
-			Circle circle = new Circle(circleRadius.Text);
-			showAnswer(circle.countArea());
+			string[] arguments = Tools.replaceDotsByCommas(new string[] { circleRadius.Text });
+
+			NumberValidator validator = new NumberValidator();
+			if (validator.validate(arguments))
+			{
+				Circle circle = new Circle(arguments);
+				showAnswer(circle.countArea());
+			}
 		}
 
 		private void rectangleAreaButton_Click(object sender, EventArgs e)
 		{
-			Rectangle rectangle = new Rectangle(rectangleWidth.Text, rectangleHeight.Text);
-			showAnswer(rectangle.countArea());
+			string[] arguments = Tools.replaceDotsByCommas(new string[] { rectangleWidth.Text, rectangleHeight.Text });
+
+			NumberValidator validator = new NumberValidator();
+			if (validator.validate(arguments))
+			{
+				Rectangle rect = new Rectangle(arguments);
+				showAnswer(rect.countArea());
+			}
 		}
 
 		private void triangleAreaButton_Click(object sender, EventArgs e)
 		{
+			string[] arguments = new string[] { };
+			string mode = "";
+
 			int index = triangleTabControl.SelectedIndex;
             if (index == 0)
 			{
-				Triangle triangle = new Triangle(BHTriangleBase.Text, BHTriangleHeight.Text);
-				showAnswer(triangle.countArea());
+				arguments = Tools.replaceDotsByCommas(new string[] {
+					BHTriangleBase.Text,
+					BHTriangleHeight.Text
+				});
+
+				mode = "Base + Height";
 			}
 			else if (index == 1)
 			{
-				Triangle triangle = new Triangle(SATriangleSideA.Text, SATriangleSideB.Text, SATriangleAngle.Text);
-				showAnswer(triangle.countArea());
+				arguments = Tools.replaceDotsByCommas(new string[] {
+					SATriangleSideA.Text,
+					SATriangleSideB.Text,
+					SATriangleAngle.Text
+				});
+
+				AngleValidator angleValidator = new AngleValidator();
+				angleValidator.validate(new string[] { SATriangleAngle.Text });
+
+				mode = "Side + Angle";
 			}
 			else if (index == 2)
 			{
-				Triangle triangle = new Triangle(SSSTriangleSideA.Text, SSSTriangleSideB.Text, SSSTriangleSideC.Text, SSSTriangleRadius.Text);
+				arguments = Tools.replaceDotsByCommas(new string[] {
+					SSSTriangleSideA.Text,
+					SSSTriangleSideB.Text,
+					SSSTriangleSideC.Text,
+					SSSTriangleRadius.Text
+				});
+
+				mode = "Sides + Inner circle";
+			}
+
+			NumberValidator validator = new NumberValidator();
+			if (validator.validate(arguments))
+			{
+				Triangle triangle = new Triangle(arguments, mode);
 				showAnswer(triangle.countArea());
 			}
 		}
@@ -98,6 +139,16 @@ namespace AreaCountingView
 		private void SSSTrianglePage_Click(object sender, EventArgs e)
 		{
 
+		}
+
+		private void regExprCheckButotn_Click(object sender, EventArgs e)
+		{
+			string pattern = @"^(\d+|(?<exponent>\d*)(\.|\,)(?<mantissa>\d+))$";
+			string replacePattern = @"${exponent},${mantissa}";
+			Regex regex = new Regex(pattern);
+
+			string result = Regex.Replace(circleRadius.Text, pattern, replacePattern);
+			Console.WriteLine("Результат: {0}", result);
 		}
 	}
 }

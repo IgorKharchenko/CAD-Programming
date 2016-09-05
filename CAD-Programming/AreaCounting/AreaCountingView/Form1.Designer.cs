@@ -48,6 +48,8 @@
 			this.BHTrianglePage = new System.Windows.Forms.TabPage();
 			this.SATrianglePage = new System.Windows.Forms.TabPage();
 			this.SSSTrianglePage = new System.Windows.Forms.TabPage();
+			this.RadiusOnTriangleLabel = new System.Windows.Forms.Label();
+			this.SSSTriangleRadius = new System.Windows.Forms.TextBox();
 			this.SSSTriangleSideB = new System.Windows.Forms.TextBox();
 			this.SSSTriangleSideC = new System.Windows.Forms.TextBox();
 			this.SSSTriangleSideA = new System.Windows.Forms.TextBox();
@@ -59,8 +61,7 @@
 			this.rectangleAreaButton = new System.Windows.Forms.Button();
 			this.tirangleTabPage = new System.Windows.Forms.TabPage();
 			this.triangleAreaButton = new System.Windows.Forms.Button();
-			this.SSSTriangleRadius = new System.Windows.Forms.TextBox();
-			this.RadiusOnTriangleLabel = new System.Windows.Forms.Label();
+			this.regExprCheckButotn = new System.Windows.Forms.Button();
 			this.triangleTabControl.SuspendLayout();
 			this.BHTrianglePage.SuspendLayout();
 			this.SATrianglePage.SuspendLayout();
@@ -272,6 +273,24 @@
 			this.SSSTrianglePage.UseVisualStyleBackColor = true;
 			this.SSSTrianglePage.Click += new System.EventHandler(this.SSSTrianglePage_Click);
 			// 
+			// RadiusOnTriangleLabel
+			// 
+			this.RadiusOnTriangleLabel.AutoSize = true;
+			this.RadiusOnTriangleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.RadiusOnTriangleLabel.Location = new System.Drawing.Point(14, 48);
+			this.RadiusOnTriangleLabel.Name = "RadiusOnTriangleLabel";
+			this.RadiusOnTriangleLabel.Size = new System.Drawing.Size(133, 32);
+			this.RadiusOnTriangleLabel.TabIndex = 5;
+			this.RadiusOnTriangleLabel.Text = "Радиус вписанной \r\nокружности:";
+			this.RadiusOnTriangleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// SSSTriangleRadius
+			// 
+			this.SSSTriangleRadius.Location = new System.Drawing.Point(221, 55);
+			this.SSSTriangleRadius.Name = "SSSTriangleRadius";
+			this.SSSTriangleRadius.Size = new System.Drawing.Size(58, 20);
+			this.SSSTriangleRadius.TabIndex = 4;
+			// 
 			// SSSTriangleSideB
 			// 
 			this.SSSTriangleSideB.Location = new System.Drawing.Point(221, 14);
@@ -317,6 +336,7 @@
 			// 
 			// circleTabPage
 			// 
+			this.circleTabPage.Controls.Add(this.regExprCheckButotn);
 			this.circleTabPage.Controls.Add(this.radiusLabel);
 			this.circleTabPage.Controls.Add(this.circleRadius);
 			this.circleTabPage.Controls.Add(this.circleAreaButton);
@@ -384,23 +404,15 @@
 			this.triangleAreaButton.UseVisualStyleBackColor = true;
 			this.triangleAreaButton.Click += new System.EventHandler(this.triangleAreaButton_Click);
 			// 
-			// SSSTriangleRadius
+			// regExprCheckButotn
 			// 
-			this.SSSTriangleRadius.Location = new System.Drawing.Point(221, 55);
-			this.SSSTriangleRadius.Name = "SSSTriangleRadius";
-			this.SSSTriangleRadius.Size = new System.Drawing.Size(58, 20);
-			this.SSSTriangleRadius.TabIndex = 4;
-			// 
-			// RadiusOnTriangleLabel
-			// 
-			this.RadiusOnTriangleLabel.AutoSize = true;
-			this.RadiusOnTriangleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.RadiusOnTriangleLabel.Location = new System.Drawing.Point(14, 48);
-			this.RadiusOnTriangleLabel.Name = "RadiusOnTriangleLabel";
-			this.RadiusOnTriangleLabel.Size = new System.Drawing.Size(133, 32);
-			this.RadiusOnTriangleLabel.TabIndex = 5;
-			this.RadiusOnTriangleLabel.Text = "Радиус вписанной \r\nокружности:";
-			this.RadiusOnTriangleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.regExprCheckButotn.Location = new System.Drawing.Point(99, 132);
+			this.regExprCheckButotn.Name = "regExprCheckButotn";
+			this.regExprCheckButotn.Size = new System.Drawing.Size(156, 30);
+			this.regExprCheckButotn.TabIndex = 23;
+			this.regExprCheckButotn.Text = "Проверить регулярку";
+			this.regExprCheckButotn.UseVisualStyleBackColor = true;
+			this.regExprCheckButotn.Click += new System.EventHandler(this.regExprCheckButotn_Click);
 			// 
 			// Form1
 			// 
@@ -408,6 +420,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(365, 217);
 			this.Controls.Add(this.mainTabControl);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
 			this.Name = "Form1";
 			this.Text = "Расчёт площади геометрических фигур";
 			this.Load += new System.EventHandler(this.Form1_Load);
@@ -462,6 +475,7 @@
 		private System.Windows.Forms.Button triangleAreaButton;
 		private System.Windows.Forms.Label RadiusOnTriangleLabel;
 		private System.Windows.Forms.TextBox SSSTriangleRadius;
+		private System.Windows.Forms.Button regExprCheckButotn;
 	}
 }
 
