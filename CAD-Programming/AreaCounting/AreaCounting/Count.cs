@@ -58,6 +58,7 @@ namespace AreaCounting
 		public double alpha;
 		public double height;
 		public double radius;
+		private string mode;
 
 		public Triangle()
 		{
@@ -83,25 +84,39 @@ namespace AreaCounting
 					this.c = Convert.ToDouble(arguments[2]);
 					this.radius = Convert.ToDouble(arguments[3]);
 					break;
+				case "Sides + Outer circle":
+					this.a = Convert.ToDouble(arguments[0]);
+					this.b = Convert.ToDouble(arguments[1]);
+					this.c = Convert.ToDouble(arguments[2]);
+					this.radius = Convert.ToDouble(arguments[3]);
+					break;
+				case "Three sides":
+					this.a = Convert.ToDouble(arguments[0]);
+					this.b = Convert.ToDouble(arguments[1]);
+					this.c = Convert.ToDouble(arguments[2]);
+					break;
 				default:
 					throw new ArgumentNullException("Triangle constructor: режим расчёта площади треугольника не задан.");
 			}
 
+			this.mode = mode;
 		}
 
 		public double countArea()
 		{
-			if (a != 0.0 && height != 0.0)
+			switch (mode)
 			{
-                return (1.0 / 2.0) * a * height;
-			}
-			else if (a != 0.0 && b != 0.0 && alpha != 0.0)
-			{
-                return (1.0 / 2.0) * a * b * Math.Sin(alpha * (Math.PI / 180.0));
-			}
-			else if (a != 0.0 && b != 0.0 && c != 0.0 && radius != 0.0)
-			{
-				return radius * ((a + b + c) / 2.0);
+				case "Base + Height":
+					return (1.0 / 2.0) * a * height;
+				case "Side + Angle":
+					return (1.0 / 2.0) * a * b * Math.Sin(alpha * (Math.PI / 180.0));
+				case "Sides + Inner circle":
+					return radius * ((a + b + c) / 2.0);
+				case "Sides + Outer circle":
+					return (a + b + c) / (4 * radius);
+				case "Three sides":
+					double p = (a + b + c) / 2;
+					return (p - a) * (p - b);
 			}
 
 			return 0.0;

@@ -67,13 +67,34 @@ namespace AreaCountingView
 			else if (index == 2)
 			{
 				arguments = Tools.replaceDotsByCommas(new string[] {
-					SSSTriangleSideA.Text,
-					SSSTriangleSideB.Text,
-					SSSTriangleSideC.Text,
-					SSSTriangleRadius.Text
+					InnerTriangleSideA.Text,
+					InnerTriangleSideB.Text,
+					InnerTriangleSideC.Text,
+					InnerTriangleRadius.Text
 				});
 
 				mode = "Sides + Inner circle";
+			}
+			else if (index == 3)
+			{
+				arguments = Tools.replaceDotsByCommas(new string[] {
+					OuterTriangleSideA.Text,
+					OuterTriangleSideB.Text,
+					OuterTriangleSideC.Text,
+					OuterTriangleRadius.Text
+				});
+
+				mode = "Sides + Outer circle";
+			}
+			else if (index == 4)
+			{
+				arguments = Tools.replaceDotsByCommas(new string[] {
+					SidesTriangleSideA.Text,
+					SidesTriangleSideB.Text,
+					SidesTriangleSideC.Text
+				});
+
+				mode = "Three sides";
 			}
 
 			NumberValidator validator = new NumberValidator();
@@ -86,10 +107,20 @@ namespace AreaCountingView
 
 		private void showAnswer(double answer)
 		{
-			MessageBox.Show("Площадь равна " + answer, "Ответ");
+			MessageBox.Show("Площадь равна " + answer, "Ответ", MessageBoxButtons.OK);
 		}
 
 		/* Unneccessary methods */
+
+		private void regExprCheckButotn_Click(object sender, EventArgs e)
+		{
+			string pattern = @"^(\d+|(?<exponent>\d*)(\.|\,)(?<mantissa>\d+))$";
+			string replacePattern = @"${exponent},${mantissa}";
+			Regex regex = new Regex(pattern);
+
+			string result = Regex.Replace(circleRadius.Text, pattern, replacePattern);
+			Console.WriteLine("Результат: {0}", result);
+		}
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
@@ -141,14 +172,19 @@ namespace AreaCountingView
 
 		}
 
-		private void regExprCheckButotn_Click(object sender, EventArgs e)
+		private void OuterCircleTrianglePage_Click(object sender, EventArgs e)
 		{
-			string pattern = @"^(\d+|(?<exponent>\d*)(\.|\,)(?<mantissa>\d+))$";
-			string replacePattern = @"${exponent},${mantissa}";
-			Regex regex = new Regex(pattern);
 
-			string result = Regex.Replace(circleRadius.Text, pattern, replacePattern);
-			Console.WriteLine("Результат: {0}", result);
+		}
+
+		private void label1_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void SidesTriangleSideB_TextChanged(object sender, EventArgs e)
+		{
+
 		}
 	}
 }

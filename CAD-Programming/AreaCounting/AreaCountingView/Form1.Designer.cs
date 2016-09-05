@@ -47,29 +47,43 @@
 			this.triangleTabControl = new System.Windows.Forms.TabControl();
 			this.BHTrianglePage = new System.Windows.Forms.TabPage();
 			this.SATrianglePage = new System.Windows.Forms.TabPage();
-			this.SSSTrianglePage = new System.Windows.Forms.TabPage();
+			this.InnerCircleTrianglePage = new System.Windows.Forms.TabPage();
 			this.RadiusOnTriangleLabel = new System.Windows.Forms.Label();
-			this.SSSTriangleRadius = new System.Windows.Forms.TextBox();
-			this.SSSTriangleSideB = new System.Windows.Forms.TextBox();
-			this.SSSTriangleSideC = new System.Windows.Forms.TextBox();
-			this.SSSTriangleSideA = new System.Windows.Forms.TextBox();
+			this.InnerTriangleRadius = new System.Windows.Forms.TextBox();
+			this.InnerTriangleSideB = new System.Windows.Forms.TextBox();
+			this.InnerTriangleSideC = new System.Windows.Forms.TextBox();
+			this.InnerTriangleSideA = new System.Windows.Forms.TextBox();
 			this.SidesOnTriangleLabel = new System.Windows.Forms.Label();
 			this.mainTabControl = new System.Windows.Forms.TabControl();
 			this.circleTabPage = new System.Windows.Forms.TabPage();
+			this.regExprCheckButotn = new System.Windows.Forms.Button();
 			this.circleAreaButton = new System.Windows.Forms.Button();
 			this.rectangleTabPage = new System.Windows.Forms.TabPage();
 			this.rectangleAreaButton = new System.Windows.Forms.Button();
 			this.tirangleTabPage = new System.Windows.Forms.TabPage();
 			this.triangleAreaButton = new System.Windows.Forms.Button();
-			this.regExprCheckButotn = new System.Windows.Forms.Button();
+			this.OuterCircleTrianglePage = new System.Windows.Forms.TabPage();
+			this.RadiusOutTriangleLabel = new System.Windows.Forms.Label();
+			this.OuterTriangleRadius = new System.Windows.Forms.TextBox();
+			this.OuterTriangleSideB = new System.Windows.Forms.TextBox();
+			this.OuterTriangleSideC = new System.Windows.Forms.TextBox();
+			this.OuterTriangleSideA = new System.Windows.Forms.TextBox();
+			this.SidesOnTriangleLabel2 = new System.Windows.Forms.Label();
+			this.SidesTrianglePage = new System.Windows.Forms.TabPage();
+			this.SidesTriangleSideB = new System.Windows.Forms.TextBox();
+			this.SidesTriangleSideC = new System.Windows.Forms.TextBox();
+			this.SidesTriangleSideA = new System.Windows.Forms.TextBox();
+			this.SidesOnTriangleLabel3 = new System.Windows.Forms.Label();
 			this.triangleTabControl.SuspendLayout();
 			this.BHTrianglePage.SuspendLayout();
 			this.SATrianglePage.SuspendLayout();
-			this.SSSTrianglePage.SuspendLayout();
+			this.InnerCircleTrianglePage.SuspendLayout();
 			this.mainTabControl.SuspendLayout();
 			this.circleTabPage.SuspendLayout();
 			this.rectangleTabPage.SuspendLayout();
 			this.tirangleTabPage.SuspendLayout();
+			this.OuterCircleTrianglePage.SuspendLayout();
+			this.SidesTrianglePage.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// circleRadius
@@ -218,7 +232,9 @@
 			// 
 			this.triangleTabControl.Controls.Add(this.BHTrianglePage);
 			this.triangleTabControl.Controls.Add(this.SATrianglePage);
-			this.triangleTabControl.Controls.Add(this.SSSTrianglePage);
+			this.triangleTabControl.Controls.Add(this.InnerCircleTrianglePage);
+			this.triangleTabControl.Controls.Add(this.OuterCircleTrianglePage);
+			this.triangleTabControl.Controls.Add(this.SidesTrianglePage);
 			this.triangleTabControl.Location = new System.Drawing.Point(0, 3);
 			this.triangleTabControl.Name = "triangleTabControl";
 			this.triangleTabControl.Padding = new System.Drawing.Point(0, 0);
@@ -257,21 +273,21 @@
 			this.SATrianglePage.UseVisualStyleBackColor = true;
 			this.SATrianglePage.Click += new System.EventHandler(this.SATrianglePage_Click);
 			// 
-			// SSSTrianglePage
+			// InnerCircleTrianglePage
 			// 
-			this.SSSTrianglePage.Controls.Add(this.RadiusOnTriangleLabel);
-			this.SSSTrianglePage.Controls.Add(this.SSSTriangleRadius);
-			this.SSSTrianglePage.Controls.Add(this.SSSTriangleSideB);
-			this.SSSTrianglePage.Controls.Add(this.SSSTriangleSideC);
-			this.SSSTrianglePage.Controls.Add(this.SSSTriangleSideA);
-			this.SSSTrianglePage.Controls.Add(this.SidesOnTriangleLabel);
-			this.SSSTrianglePage.Location = new System.Drawing.Point(4, 22);
-			this.SSSTrianglePage.Name = "SSSTrianglePage";
-			this.SSSTrianglePage.Size = new System.Drawing.Size(352, 119);
-			this.SSSTrianglePage.TabIndex = 2;
-			this.SSSTrianglePage.Text = "3 стороны и круг внутри";
-			this.SSSTrianglePage.UseVisualStyleBackColor = true;
-			this.SSSTrianglePage.Click += new System.EventHandler(this.SSSTrianglePage_Click);
+			this.InnerCircleTrianglePage.Controls.Add(this.RadiusOnTriangleLabel);
+			this.InnerCircleTrianglePage.Controls.Add(this.InnerTriangleRadius);
+			this.InnerCircleTrianglePage.Controls.Add(this.InnerTriangleSideB);
+			this.InnerCircleTrianglePage.Controls.Add(this.InnerTriangleSideC);
+			this.InnerCircleTrianglePage.Controls.Add(this.InnerTriangleSideA);
+			this.InnerCircleTrianglePage.Controls.Add(this.SidesOnTriangleLabel);
+			this.InnerCircleTrianglePage.Location = new System.Drawing.Point(4, 22);
+			this.InnerCircleTrianglePage.Name = "InnerCircleTrianglePage";
+			this.InnerCircleTrianglePage.Size = new System.Drawing.Size(352, 119);
+			this.InnerCircleTrianglePage.TabIndex = 2;
+			this.InnerCircleTrianglePage.Text = "3 стороны и круг внутри";
+			this.InnerCircleTrianglePage.UseVisualStyleBackColor = true;
+			this.InnerCircleTrianglePage.Click += new System.EventHandler(this.SSSTrianglePage_Click);
 			// 
 			// RadiusOnTriangleLabel
 			// 
@@ -284,34 +300,34 @@
 			this.RadiusOnTriangleLabel.Text = "Радиус вписанной \r\nокружности:";
 			this.RadiusOnTriangleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// SSSTriangleRadius
+			// InnerTriangleRadius
 			// 
-			this.SSSTriangleRadius.Location = new System.Drawing.Point(221, 55);
-			this.SSSTriangleRadius.Name = "SSSTriangleRadius";
-			this.SSSTriangleRadius.Size = new System.Drawing.Size(58, 20);
-			this.SSSTriangleRadius.TabIndex = 4;
+			this.InnerTriangleRadius.Location = new System.Drawing.Point(221, 55);
+			this.InnerTriangleRadius.Name = "InnerTriangleRadius";
+			this.InnerTriangleRadius.Size = new System.Drawing.Size(58, 20);
+			this.InnerTriangleRadius.TabIndex = 4;
 			// 
-			// SSSTriangleSideB
+			// InnerTriangleSideB
 			// 
-			this.SSSTriangleSideB.Location = new System.Drawing.Point(221, 14);
-			this.SSSTriangleSideB.Name = "SSSTriangleSideB";
-			this.SSSTriangleSideB.Size = new System.Drawing.Size(58, 20);
-			this.SSSTriangleSideB.TabIndex = 3;
+			this.InnerTriangleSideB.Location = new System.Drawing.Point(221, 14);
+			this.InnerTriangleSideB.Name = "InnerTriangleSideB";
+			this.InnerTriangleSideB.Size = new System.Drawing.Size(58, 20);
+			this.InnerTriangleSideB.TabIndex = 3;
 			// 
-			// SSSTriangleSideC
+			// InnerTriangleSideC
 			// 
-			this.SSSTriangleSideC.Location = new System.Drawing.Point(285, 14);
-			this.SSSTriangleSideC.Name = "SSSTriangleSideC";
-			this.SSSTriangleSideC.Size = new System.Drawing.Size(58, 20);
-			this.SSSTriangleSideC.TabIndex = 2;
-			this.SSSTriangleSideC.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+			this.InnerTriangleSideC.Location = new System.Drawing.Point(285, 14);
+			this.InnerTriangleSideC.Name = "InnerTriangleSideC";
+			this.InnerTriangleSideC.Size = new System.Drawing.Size(58, 20);
+			this.InnerTriangleSideC.TabIndex = 2;
+			this.InnerTriangleSideC.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
 			// 
-			// SSSTriangleSideA
+			// InnerTriangleSideA
 			// 
-			this.SSSTriangleSideA.Location = new System.Drawing.Point(157, 14);
-			this.SSSTriangleSideA.Name = "SSSTriangleSideA";
-			this.SSSTriangleSideA.Size = new System.Drawing.Size(58, 20);
-			this.SSSTriangleSideA.TabIndex = 1;
+			this.InnerTriangleSideA.Location = new System.Drawing.Point(157, 14);
+			this.InnerTriangleSideA.Name = "InnerTriangleSideA";
+			this.InnerTriangleSideA.Size = new System.Drawing.Size(58, 20);
+			this.InnerTriangleSideA.TabIndex = 1;
 			// 
 			// SidesOnTriangleLabel
 			// 
@@ -347,6 +363,16 @@
 			this.circleTabPage.TabIndex = 0;
 			this.circleTabPage.Text = "Круг";
 			this.circleTabPage.UseVisualStyleBackColor = true;
+			// 
+			// regExprCheckButotn
+			// 
+			this.regExprCheckButotn.Location = new System.Drawing.Point(99, 132);
+			this.regExprCheckButotn.Name = "regExprCheckButotn";
+			this.regExprCheckButotn.Size = new System.Drawing.Size(156, 30);
+			this.regExprCheckButotn.TabIndex = 23;
+			this.regExprCheckButotn.Text = "Проверить регулярку";
+			this.regExprCheckButotn.UseVisualStyleBackColor = true;
+			this.regExprCheckButotn.Click += new System.EventHandler(this.regExprCheckButotn_Click);
 			// 
 			// circleAreaButton
 			// 
@@ -404,15 +430,116 @@
 			this.triangleAreaButton.UseVisualStyleBackColor = true;
 			this.triangleAreaButton.Click += new System.EventHandler(this.triangleAreaButton_Click);
 			// 
-			// regExprCheckButotn
+			// OuterCircleTrianglePage
 			// 
-			this.regExprCheckButotn.Location = new System.Drawing.Point(99, 132);
-			this.regExprCheckButotn.Name = "regExprCheckButotn";
-			this.regExprCheckButotn.Size = new System.Drawing.Size(156, 30);
-			this.regExprCheckButotn.TabIndex = 23;
-			this.regExprCheckButotn.Text = "Проверить регулярку";
-			this.regExprCheckButotn.UseVisualStyleBackColor = true;
-			this.regExprCheckButotn.Click += new System.EventHandler(this.regExprCheckButotn_Click);
+			this.OuterCircleTrianglePage.Controls.Add(this.RadiusOutTriangleLabel);
+			this.OuterCircleTrianglePage.Controls.Add(this.OuterTriangleRadius);
+			this.OuterCircleTrianglePage.Controls.Add(this.OuterTriangleSideB);
+			this.OuterCircleTrianglePage.Controls.Add(this.OuterTriangleSideC);
+			this.OuterCircleTrianglePage.Controls.Add(this.OuterTriangleSideA);
+			this.OuterCircleTrianglePage.Controls.Add(this.SidesOnTriangleLabel2);
+			this.OuterCircleTrianglePage.Location = new System.Drawing.Point(4, 22);
+			this.OuterCircleTrianglePage.Name = "OuterCircleTrianglePage";
+			this.OuterCircleTrianglePage.Size = new System.Drawing.Size(352, 119);
+			this.OuterCircleTrianglePage.TabIndex = 3;
+			this.OuterCircleTrianglePage.Text = "3 стороны и круг снаружи";
+			this.OuterCircleTrianglePage.UseVisualStyleBackColor = true;
+			this.OuterCircleTrianglePage.Click += new System.EventHandler(this.OuterCircleTrianglePage_Click);
+			// 
+			// RadiusOutTriangleLabel
+			// 
+			this.RadiusOutTriangleLabel.AutoSize = true;
+			this.RadiusOutTriangleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.RadiusOutTriangleLabel.Location = new System.Drawing.Point(12, 60);
+			this.RadiusOutTriangleLabel.Name = "RadiusOutTriangleLabel";
+			this.RadiusOutTriangleLabel.Size = new System.Drawing.Size(133, 32);
+			this.RadiusOutTriangleLabel.TabIndex = 11;
+			this.RadiusOutTriangleLabel.Text = "Радиус описанной \r\nокружности:";
+			this.RadiusOutTriangleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// OuterTriangleRadius
+			// 
+			this.OuterTriangleRadius.Location = new System.Drawing.Point(219, 67);
+			this.OuterTriangleRadius.Name = "OuterTriangleRadius";
+			this.OuterTriangleRadius.Size = new System.Drawing.Size(58, 20);
+			this.OuterTriangleRadius.TabIndex = 10;
+			// 
+			// OuterTriangleSideB
+			// 
+			this.OuterTriangleSideB.Location = new System.Drawing.Point(219, 26);
+			this.OuterTriangleSideB.Name = "OuterTriangleSideB";
+			this.OuterTriangleSideB.Size = new System.Drawing.Size(58, 20);
+			this.OuterTriangleSideB.TabIndex = 9;
+			// 
+			// OuterTriangleSideC
+			// 
+			this.OuterTriangleSideC.Location = new System.Drawing.Point(283, 26);
+			this.OuterTriangleSideC.Name = "OuterTriangleSideC";
+			this.OuterTriangleSideC.Size = new System.Drawing.Size(58, 20);
+			this.OuterTriangleSideC.TabIndex = 8;
+			// 
+			// OuterTriangleSideA
+			// 
+			this.OuterTriangleSideA.Location = new System.Drawing.Point(155, 26);
+			this.OuterTriangleSideA.Name = "OuterTriangleSideA";
+			this.OuterTriangleSideA.Size = new System.Drawing.Size(58, 20);
+			this.OuterTriangleSideA.TabIndex = 7;
+			// 
+			// SidesOnTriangleLabel2
+			// 
+			this.SidesOnTriangleLabel2.AutoSize = true;
+			this.SidesOnTriangleLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.SidesOnTriangleLabel2.Location = new System.Drawing.Point(12, 26);
+			this.SidesOnTriangleLabel2.Name = "SidesOnTriangleLabel2";
+			this.SidesOnTriangleLabel2.Size = new System.Drawing.Size(118, 16);
+			this.SidesOnTriangleLabel2.TabIndex = 6;
+			this.SidesOnTriangleLabel2.Text = "Стороны А, B и С:";
+			// 
+			// SidesTrianglePage
+			// 
+			this.SidesTrianglePage.Controls.Add(this.SidesTriangleSideB);
+			this.SidesTrianglePage.Controls.Add(this.SidesTriangleSideC);
+			this.SidesTrianglePage.Controls.Add(this.SidesTriangleSideA);
+			this.SidesTrianglePage.Controls.Add(this.SidesOnTriangleLabel3);
+			this.SidesTrianglePage.Location = new System.Drawing.Point(4, 22);
+			this.SidesTrianglePage.Name = "SidesTrianglePage";
+			this.SidesTrianglePage.Size = new System.Drawing.Size(352, 119);
+			this.SidesTrianglePage.TabIndex = 4;
+			this.SidesTrianglePage.Text = "3 стороны";
+			this.SidesTrianglePage.UseVisualStyleBackColor = true;
+			// 
+			// SidesTriangleSideB
+			// 
+			this.SidesTriangleSideB.Location = new System.Drawing.Point(219, 49);
+			this.SidesTriangleSideB.Name = "SidesTriangleSideB";
+			this.SidesTriangleSideB.Size = new System.Drawing.Size(58, 20);
+			this.SidesTriangleSideB.TabIndex = 13;
+			this.SidesTriangleSideB.TextChanged += new System.EventHandler(this.SidesTriangleSideB_TextChanged);
+			// 
+			// SidesTriangleSideC
+			// 
+			this.SidesTriangleSideC.Location = new System.Drawing.Point(283, 49);
+			this.SidesTriangleSideC.Name = "SidesTriangleSideC";
+			this.SidesTriangleSideC.Size = new System.Drawing.Size(58, 20);
+			this.SidesTriangleSideC.TabIndex = 12;
+			// 
+			// SidesTriangleSideA
+			// 
+			this.SidesTriangleSideA.Location = new System.Drawing.Point(155, 49);
+			this.SidesTriangleSideA.Name = "SidesTriangleSideA";
+			this.SidesTriangleSideA.Size = new System.Drawing.Size(58, 20);
+			this.SidesTriangleSideA.TabIndex = 11;
+			// 
+			// SidesOnTriangleLabel3
+			// 
+			this.SidesOnTriangleLabel3.AutoSize = true;
+			this.SidesOnTriangleLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.SidesOnTriangleLabel3.Location = new System.Drawing.Point(12, 49);
+			this.SidesOnTriangleLabel3.Name = "SidesOnTriangleLabel3";
+			this.SidesOnTriangleLabel3.Size = new System.Drawing.Size(118, 16);
+			this.SidesOnTriangleLabel3.TabIndex = 10;
+			this.SidesOnTriangleLabel3.Text = "Стороны А, B и С:";
+			this.SidesOnTriangleLabel3.Click += new System.EventHandler(this.label1_Click);
 			// 
 			// Form1
 			// 
@@ -429,14 +556,18 @@
 			this.BHTrianglePage.PerformLayout();
 			this.SATrianglePage.ResumeLayout(false);
 			this.SATrianglePage.PerformLayout();
-			this.SSSTrianglePage.ResumeLayout(false);
-			this.SSSTrianglePage.PerformLayout();
+			this.InnerCircleTrianglePage.ResumeLayout(false);
+			this.InnerCircleTrianglePage.PerformLayout();
 			this.mainTabControl.ResumeLayout(false);
 			this.circleTabPage.ResumeLayout(false);
 			this.circleTabPage.PerformLayout();
 			this.rectangleTabPage.ResumeLayout(false);
 			this.rectangleTabPage.PerformLayout();
 			this.tirangleTabPage.ResumeLayout(false);
+			this.OuterCircleTrianglePage.ResumeLayout(false);
+			this.OuterCircleTrianglePage.PerformLayout();
+			this.SidesTrianglePage.ResumeLayout(false);
+			this.SidesTrianglePage.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -461,21 +592,33 @@
 		private System.Windows.Forms.TabControl triangleTabControl;
 		private System.Windows.Forms.TabPage BHTrianglePage;
 		private System.Windows.Forms.TabPage SATrianglePage;
-		private System.Windows.Forms.TabPage SSSTrianglePage;
+		private System.Windows.Forms.TabPage InnerCircleTrianglePage;
 		private System.Windows.Forms.TabControl mainTabControl;
 		private System.Windows.Forms.TabPage circleTabPage;
 		private System.Windows.Forms.TabPage rectangleTabPage;
 		private System.Windows.Forms.TabPage tirangleTabPage;
-		private System.Windows.Forms.TextBox SSSTriangleSideB;
-		private System.Windows.Forms.TextBox SSSTriangleSideC;
-		private System.Windows.Forms.TextBox SSSTriangleSideA;
+		private System.Windows.Forms.TextBox InnerTriangleSideB;
+		private System.Windows.Forms.TextBox InnerTriangleSideC;
+		private System.Windows.Forms.TextBox InnerTriangleSideA;
 		private System.Windows.Forms.Label SidesOnTriangleLabel;
 		private System.Windows.Forms.Button circleAreaButton;
 		private System.Windows.Forms.Button rectangleAreaButton;
 		private System.Windows.Forms.Button triangleAreaButton;
 		private System.Windows.Forms.Label RadiusOnTriangleLabel;
-		private System.Windows.Forms.TextBox SSSTriangleRadius;
+		private System.Windows.Forms.TextBox InnerTriangleRadius;
 		private System.Windows.Forms.Button regExprCheckButotn;
+		private System.Windows.Forms.TabPage OuterCircleTrianglePage;
+		private System.Windows.Forms.Label RadiusOutTriangleLabel;
+		private System.Windows.Forms.TextBox OuterTriangleRadius;
+		private System.Windows.Forms.TextBox OuterTriangleSideB;
+		private System.Windows.Forms.TextBox OuterTriangleSideC;
+		private System.Windows.Forms.TextBox OuterTriangleSideA;
+		private System.Windows.Forms.Label SidesOnTriangleLabel2;
+		private System.Windows.Forms.TabPage SidesTrianglePage;
+		private System.Windows.Forms.TextBox SidesTriangleSideB;
+		private System.Windows.Forms.TextBox SidesTriangleSideC;
+		private System.Windows.Forms.TextBox SidesTriangleSideA;
+		private System.Windows.Forms.Label SidesOnTriangleLabel3;
 	}
 }
 
