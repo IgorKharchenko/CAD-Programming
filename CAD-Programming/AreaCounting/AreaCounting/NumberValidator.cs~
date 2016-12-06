@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
+
+namespace AreaCounting
+{
+	public class NumberValidator : IValidator
+	{
+		public bool Validate(List<string> input)
+		{
+			// All numbers with commas are available
+			string pattern = @"^(\d+|\d*\,\d+)$";
+			Regex regex = new Regex(pattern);
+
+			foreach (string element in input)
+			{
+				if (!regex.IsMatch(element) || element == String.Empty)
+				{
+					throw new ArgumentException("Ошибка при валидации числа с запятой.");
+				}
+			}
+
+			return true;
+		}
+	}
+
+}

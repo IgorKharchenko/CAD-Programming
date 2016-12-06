@@ -1,0 +1,19 @@
+﻿using System;
+
+namespace AreaCounting
+{		
+    public class Circle  
+    {
+		private double _radius;
+
+		public Circle(List<double> input)
+		{
+			this._radius = input.Item(0);
+		}
+
+		public double CountArea()
+		{
+			return System.Math.PI * _radius * _radius;
+		}
+    }
+}

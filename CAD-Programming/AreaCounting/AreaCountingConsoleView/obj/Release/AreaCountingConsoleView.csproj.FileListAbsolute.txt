@@ -1,0 +1,8 @@
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingConsoleView\bin\Release\AreaCountingConsoleView.exe.config
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingConsoleView\bin\Release\AreaCountingConsoleView.exe
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingConsoleView\bin\Release\AreaCountingConsoleView.pdb
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingConsoleView\bin\Release\AreaCounting.dll
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingConsoleView\bin\Release\AreaCounting.pdb
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingConsoleView\obj\Release\AreaCountingConsoleView.csprojResolveAssemblyReference.cache
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingConsoleView\obj\Release\AreaCountingConsoleView.exe
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingConsoleView\obj\Release\AreaCountingConsoleView.pdb

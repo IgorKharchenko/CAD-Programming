@@ -1,0 +1,11 @@
+﻿using System.Collections.Generic;
+
+namespace AreaCounting
+{
+	public enum TriangleCountModes { Base_Height, Side_Angle, Sides_InnerCircle, Sides_OuterCircle, ThreeSides };
+
+	public interface IValidator
+	{
+		bool Validate(List<string> input);
+	}
+}

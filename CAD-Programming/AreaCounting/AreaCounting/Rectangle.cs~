@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AreaCounting
+{
+	public class Rectangle : ICountable
+	{
+		private double _width;
+		private double _height;
+
+		public Rectangle(string[] arguments)
+		{
+			this._width = Convert.ToDouble(arguments[0]);
+			this._height = Convert.ToDouble(arguments[1]);
+		}
+
+		public double CountArea()
+		{
+			return _width * _height;
+		}
+	}
+}

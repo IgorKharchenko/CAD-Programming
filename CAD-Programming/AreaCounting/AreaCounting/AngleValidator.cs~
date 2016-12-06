@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace AreaCounting
+{
+	public class AngleValidator : NumberValidator
+	{
+		public bool Validate(List<string> input)
+		{
+			base.Validate(input);
+
+			foreach (string element in input)
+			{
+			/*	if (element <= 0.0 && element >= 360.0)
+				{
+					throw new ArgumentException("Угол не может быть меньше 0 и больше 360 градусов.");
+				}*/
+			}
+
+			return true;
+		}
+	}
+}

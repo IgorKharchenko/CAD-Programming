@@ -6,3 +6,8 @@ C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\AreaCounting\Are
 C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\AreaCounting\AreaCounting\obj\Release\AreaCounting.pdb
 C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\AreaCounting\AreaCounting\bin\Release\AreaCounting.dll
 C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\AreaCounting\AreaCounting\bin\Release\AreaCounting.pdb
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCounting\bin\Release\AreaCounting.dll
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCounting\bin\Release\AreaCounting.pdb
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCounting\obj\Release\AreaCounting.dll
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCounting\obj\Release\AreaCounting.pdb
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCounting\obj\Release\AreaCounting.csprojResolveAssemblyReference.cache

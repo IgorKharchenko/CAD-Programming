@@ -1,0 +1,77 @@
+﻿using System;
+using AreaCounting;
+using System.Collections.Generic;
+
+namespace AreaCountingConsoleView
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			bool repeat = true;
+			do 
+			{	
+				int OptionNumber;
+				var ArgumentsList = new List<string>(); 
+			  	
+				Console.WriteLine(" ===== Расчёт площади геометрических фигур =====\n");
+				Console.WriteLine(" 1. Круг");
+				Console.WriteLine(" 2. Квадрат");
+				Console.WriteLine(" 3. Треугольник\n");
+				Console.WriteLine(" 0. Выйти из программы \n");
+				Console.WriteLine(" Выберите нужную опцию: ");
+				
+				try 
+				{
+					OptionNumber = Convert.ToInt32(Console.ReadLine());
+					switch (OptionNumber)	
+					{
+						case 1:
+							Console.Write(" Введите радиус круга (через запятую): ");
+							ArgumentsList.Add(AreaCountingConsoleView.TryReadDouble());
+							var circle = new Circle();
+							Console.Write(" Площадь равна {1}", circle.CountArea());
+							break;
+						case 2:
+							
+							break;
+						case 3:
+							
+							break;
+						case 0:
+							repeat = false;
+							break;
+						default:
+  							Console.WriteLine(" Неверная опция. Пожалуйста, повторите ввод:");
+							OptionNumber = Convert.ToInt32(Console.ReadLine());
+							break;
+					}
+					
+				}
+				catch (FormatException e)
+				{
+					throw new ArgumentException(" Была ввведена неверная опция.");
+				}
+
+			} while (repeat); 
+
+		}
+		
+		double TryReadDouble()
+		{
+			try
+			{
+				double output = Convert.ToDouble(Console.ReadLine());
+				return output;
+			}
+			catch (FormatException e)
+			{
+				throw new ArgumentException(" Неверный формат ввода.");
+			}
+			catch (OverflowException e)
+			{
+				throw new ArgumentException(" Выход за границы допустимых значенийчисла с запятой. ");
+			}
+		}
+	}
+}

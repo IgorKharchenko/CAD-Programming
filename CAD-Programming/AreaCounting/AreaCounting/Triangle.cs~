@@ -1,0 +1,74 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AreaCounting
+{
+	public class Triangle 
+	{
+		private double _a;
+		private double _b;
+		private double _c;
+		private double _alpha;
+		private double _height;
+		private double _radius;
+		private TriangleCountModes _mode;
+
+		// string -> double
+		public Triangle(string[] arguments, TriangleCountModes mode)
+		{
+			this._a = Convert.ToDouble(arguments[0]);
+			switch (mode)
+			{
+				case TriangleCountModes.Base_Height:
+					this._height = Convert.ToDouble(arguments[1]);
+					break;
+				case TriangleCountModes.Side_Angle:
+					this._b = Convert.ToDouble(arguments[1]);
+					this._alpha = Convert.ToDouble(arguments[2]);
+					break;
+				case TriangleCountModes.Sides_InnerCircle:
+					this._b = Convert.ToDouble(arguments[1]);
+					this._c = Convert.ToDouble(arguments[2]);
+					this._radius = Convert.ToDouble(arguments[3]);
+					break;
+				case TriangleCountModes.Sides_OuterCircle:
+					this._b = Convert.ToDouble(arguments[1]);
+					this._c = Convert.ToDouble(arguments[2]);
+					this._radius = Convert.ToDouble(arguments[3]);
+					break;
+				case TriangleCountModes.ThreeSides:
+					this._b = Convert.ToDouble(arguments[1]);
+					this._c = Convert.ToDouble(arguments[2]);
+					break;
+				default:
+					throw new ArgumentNullException("Triangle constructor: режим расчёта площади треугольника не задан.");
+			}
+
+			this._mode = mode;
+		}
+
+		public double CountArea()
+		{
+			switch (_mode)
+			{
+				// enum!
+				case TriangleCountModes.Base_Height:
+					return (1.0 / 2.0) * _a * _height;
+				case TriangleCountModes.Side_Angle:
+					return (1.0 / 2.0) * _a * _b * Math.Sin(_alpha * (Math.PI / 180.0));
+				case TriangleCountModes.Sides_InnerCircle:
+					return _radius * ((_a + _b + _c) / 2.0);
+				case TriangleCountModes.Sides_OuterCircle:
+					return (_a + _b + _c) / (4.0 * _radius);
+				case TriangleCountModes.ThreeSides:
+					double p = (_a + _b + _c) / 2.0;
+					return (p - _a) * (p - _b);
+			}
+
+			return 0.0;
+		}
+	}
+}

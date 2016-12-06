@@ -1,44 +1,13 @@
-C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCountingView\AreaCountingView\bin\Debug\AreaCountingView.exe.config
-C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCountingView\AreaCountingView\bin\Debug\AreaCountingView.exe
-C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCountingView\AreaCountingView\bin\Debug\AreaCountingView.pdb
-C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCountingView\AreaCountingView\obj\Debug\AreaCountingView.csprojResolveAssemblyReference.cache
-C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCountingView\AreaCountingView\obj\Debug\AreaCountingView.Form1.resources
-C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCountingView\AreaCountingView\obj\Debug\AreaCountingView.Properties.Resources.resources
-C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCountingView\AreaCountingView\obj\Debug\AreaCountingView.csproj.GenerateResource.Cache
-C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCountingView\AreaCountingView\obj\Debug\AreaCountingView.exe
-C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCountingView\AreaCountingView\obj\Debug\AreaCountingView.pdb
-C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCountingView\AreaCountingView\bin\Debug\AreaCounting.dll
-C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCountingView\AreaCountingView\bin\Debug\AreaCounting.pdb
-C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCounting\AreaCountingView\bin\Debug\AreaCountingView.exe.config
-C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCounting\AreaCountingView\bin\Debug\AreaCountingView.exe
-C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCounting\AreaCountingView\bin\Debug\AreaCountingView.pdb
-C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCounting\AreaCountingView\bin\Debug\AreaCounting.pdb
-C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCounting\AreaCountingView\obj\Debug\AreaCountingView.Form1.resources
-C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCounting\AreaCountingView\obj\Debug\AreaCountingView.Properties.Resources.resources
-C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCounting\AreaCountingView\obj\Debug\AreaCountingView.csproj.GenerateResource.Cache
-C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCounting\AreaCountingView\obj\Debug\AreaCountingView.exe
-C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCounting\AreaCountingView\obj\Debug\AreaCountingView.pdb
-C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCounting\AreaCountingView\bin\Debug\AreaCounting.dll
-C:\Users\Игорь\Desktop\Учёба\НТвП\Lab 1\AreaCounting\AreaCountingView\obj\Debug\AreaCountingView.csprojResolveAssemblyReference.cache
-C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\AreaCounting\AreaCountingView\bin\Debug\AreaCountingView.exe.config
-C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\AreaCounting\AreaCountingView\obj\Debug\AreaCountingView.exe
-C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\AreaCounting\AreaCountingView\obj\Debug\AreaCountingView.pdb
-C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\AreaCounting\AreaCountingView\bin\Debug\AreaCountingView.exe
-C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\AreaCounting\AreaCountingView\bin\Debug\AreaCountingView.pdb
-C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\AreaCounting\AreaCountingView\bin\Debug\AreaCounting.dll
-C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\AreaCounting\AreaCountingView\bin\Debug\AreaCounting.pdb
-C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\AreaCounting\AreaCountingView\obj\Debug\AreaCountingView.Form1.resources
-C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\AreaCounting\AreaCountingView\obj\Debug\AreaCountingView.Properties.Resources.resources
-C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\AreaCounting\AreaCountingView\obj\Debug\AreaCountingView.csproj.GenerateResource.Cache
-C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\AreaCounting\AreaCountingView\obj\Debug\AreaCountingView.csprojResolveAssemblyReference.cache
 C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingView\bin\Debug\AreaCountingView.exe.config
-C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingView\obj\Debug\AreaCountingView.exe
-C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingView\obj\Debug\AreaCountingView.pdb
 C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingView\bin\Debug\AreaCountingView.exe
 C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingView\bin\Debug\AreaCountingView.pdb
-C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingView\bin\Debug\AreaCounting.dll
-C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingView\bin\Debug\AreaCounting.pdb
 C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingView\obj\Debug\AreaCountingView.csprojResolveAssemblyReference.cache
-C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingView\obj\Debug\AreaCountingView.Form1.resources
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingView\obj\Debug\AreaCountingView.AreaCountingForm.resources
 C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingView\obj\Debug\AreaCountingView.Properties.Resources.resources
 C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingView\obj\Debug\AreaCountingView.csproj.GenerateResource.Cache
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingView\obj\Debug\AreaCountingView.exe
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingView\obj\Debug\AreaCountingView.pdb
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingView\bin\Debug\AreaCounting.dll
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingView\bin\Debug\AreaCounting.pdb
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingView\obj\Debug\AreaCountingView.FigureCreatingForm.resources
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCountingView\obj\Debug\AreaCountingView.FindForm.resources

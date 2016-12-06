@@ -10,3 +10,4 @@ C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\
 C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCounting\bin\Debug\AreaCounting.pdb
 C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCounting\obj\Debug\AreaCounting.dll
 C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCounting\obj\Debug\AreaCounting.pdb
+C:\Users\Игорь\Desktop\Учёба\НТвП\CAD-Programming\CAD-Programming\AreaCounting\AreaCounting\obj\Debug\AreaCounting.csprojResolveAssemblyReference.cache

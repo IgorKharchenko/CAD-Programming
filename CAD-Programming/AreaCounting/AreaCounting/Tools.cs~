@@ -1,0 +1,41 @@
+﻿using System;
+using System.Text.RegularExpressions;
+
+namespace AreaCounting
+{
+	public class Tools
+	{
+		/// <summary>
+		/// Converts all dots in commas
+		/// because converting numbers with dots to double isn't supported 
+		/// </summary>
+		/// <param name="input">An array with input strings</param>
+		/// <returns></returns>
+		public static string[] ReplaceDotsByCommas(string[] input)
+		{
+			string pattern = @"^(?<exponent>\d*)(\.|\,)(?<mantissa>\d+)$";
+			string replacePattern = @"${exponent},${mantissa}";
+			Regex regex = new Regex(pattern);
+
+			for (int i = 0, length = input.Length; i < length; i++)
+			{
+				input[i] = Regex.Replace(input[i], pattern, replacePattern);
+			}
+
+			return input;
+		}
+
+		public static double[] ConvertStringToDouble(string[] input)
+		{
+			double[] output = new double[] { };
+
+			for (int i = 0; i < input.Length; i++)
+			{
+				// sh*t happens
+				// Array.add(output[i], Convert.ToDouble(input[i]));
+			}
+
+			return output;
+		}
+	}
+}
