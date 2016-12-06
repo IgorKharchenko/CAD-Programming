@@ -42,7 +42,9 @@ namespace AreaCountingView
 				double parentArea = Convert.ToDouble(AreaGridRow.Cells[1].Value);
 				string findName = Convert.ToString(FigureName.Text);
 				double findArea = 0.0;		// Default value is 0.0
-				if (FigureArea.Text != "")
+
+				// Ну допустим мы здесь чё-то накосячили
+				if (FigureArea.Text != "blabla-bla")
 				{
 					findArea = Convert.ToDouble(FigureArea.Text);	// If value is set -- use him
                 }
