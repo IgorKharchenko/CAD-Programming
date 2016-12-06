@@ -53,7 +53,8 @@ namespace AreaCountingView
 				Row["Figure"] = parentName;
 				Row["Area"] = parentArea;
 
-				if (findName != "" && findArea != 0.0)
+				// Изменения
+				if (findName != "blabla" && findArea != 0.0)
 				{
 					if (findName == parentName && findArea == parentArea)
 					{
